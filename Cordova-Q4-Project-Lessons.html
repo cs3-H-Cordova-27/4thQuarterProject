@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>H gwapa</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="H">
+        <meta name="section" content="Calcium">
+        <meta name="keyword" content="Q4AA">
+
+        <link rel="stylesheet" type="text/css" href="stylesL.css">
+        
+        <link href='https://fonts.googleapis.com/css?family=Londrina Solid' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="header_content">
+                <a href="#home" class="logo">L
+                    <img src="logo.png" alt="logo" class="logo_img">
+                </a>
+            
+            
+                <nav class="nav">
+                <div class="naver">
+                <ul class="nav_list">
+                    <li class="nav_items">
+                        <a href="Biochemistry-Corodva-CsQ4Project-SignUp.html" class="nav_link">Home</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="Biochemistry-Corodva-CsQ4Project-SignUp.html" class="nav_link">About</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#pag1" class="nav_link">Lessons</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#" class="nav_link">Contact</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="#source" class="nav_link">Sources</a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+         </div>
+        </header>
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="slide">
+                    <div class="layer l1"></div>
+                    <div class="layer l2"></div>
+                    <div class="layer l4"></div>
+                    <div class="layer l3">
+                        <h1 class="num1"> Introduction to Biochemistry</h1>
+                        <ul class="anum1">
+                            <li class="char1">Definition and Scope </li>
+                            <p class="p1">- What is biochemistry and why it is important.</p>
+                            <li class="char2">Interdisciplinary Nature  </li>
+                            <p class="p1">- How biochemistry integrates biology and chemistry.</p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide"> 
+                    <div class="layer m1"></div>
+                    <div class="layer m2"></div>
+                    <div class="layer m3"> 
+                        <p class="p3">Biochemistry is the study of chemical processes within living organisms. 
+                        It bridges biology and chemistry, focusing on the molecules that constitute cells and tissues. 
+                        Key milestones in the field include the discovery of DNA's structure and the development of 
+                        techniques like chromatography and electrophoresis.</p>
+                    </div>
+                    <div class="layer m4">
+                        <h3 class="sum1"> SUMMARY: </h3>
+                        <div class="layer m5"></div>
+                    </div>
+                </div>
+                <div class="slide"> 
+                    <div class="layer l1"></div>
+                    <div class="layer n2"></div>
+                    <div class="layer n3"> 
+                        <h1 class="num2"> Biomolecules: Proteins </h1>
+                        <ul class="anum2">
+                            <li class="charr1"> Amino Acids: </li>
+                            <p class="pp1">- Structure<br>- properties<br>- the peptide bond </p>
+                            <li class="charr2">Protein Structure:  </li>
+                            <p class="pp1">- Structure<br>- properties<br>- the peptide bond</p>
+                            <li class="charr3">Functions: </li>
+                            <p class="pp1">- Enzymes<br>- structural proteins <br>- transport proteins</p>
+                        </ul>
+                    </div>
+                    <div class="layer n4">
+                        <h3 class="les"> LESSON 1 </h3>
+                        <div class="layer n5">
+                            <h3 class="sum2"> SUMMARY: </h3>
+                            <div class="anum3">
+                                <p class="pp2">Proteins are large, complex molecules made up of amino acids. 
+                                    They play a crucial role in nearly every biological process, including catalysis (enzymes), 
+                                    structure (collagen), transport (hemoglobin), and defense (antibodies). 
+                                    Understanding protein structure (primary to quaternary) is essential for grasping their diverse functions.</p>
+                            </div>
+                            <div class="layer n6"></div>
+                            <div class="layer n7"></div>
+                            <div class="layer n8">
+                                <a href="more.html">
+                                    <button class="but"> MORE </button>
+                                </a>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+         
+    <script type="text/javascript">
+        let cont = document.querySelector('.container');
+        let layer = document.querySelectorAll('.layer');
+
+        cont.onscroll = function(){
+            let X = cont.scrollTop;
+
+            layer[0].style.left = X/4 + 'px';
+            layer[1].style.left = X/8 + 'px';
+            layer[4].style.left = X/4 + 'px';
+            layer[5].style.left = X/8 + 'px';
+            layer[9].style.left = X/4 + 'px';
+            layer[14].style.left = X/0 + 'px';
+        }
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,192 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: #273456;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #273456;
+}
+.section1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("BIOCHEMISTRY.png") top center;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.0);
+    filter: blur(2px);
+}
+.section1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("BIOCHEMISTRY2.png") top center;
+    background-size: cover;
+}
+.section1 .text{
+    top:20%;
+    transform: translateZ(-0.5px) scale(1.5, 1.6) translate(-33%,10%);
+
+}
+.section1, .section2 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+}
+.section2 {
+    background: url("BIOCHEMISTRY3.png");
+}
+.text {
+    top: 30%;
+    left: 50%;
+    right: -1%;
+    position: absolute;
+    font-family: 'Londrina Solid';
+    font-size: 10svw;
+    color: #222B46;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255,255,255,0.5);
+    transform: scale(1,1.1) translate(-50%, 10%);
+}
+.texta {
+    top: 15%;
+    left: 40%;
+    right: -1%;
+    position: absolute;
+    font-family: 'Londrina Solid';
+    font-size: 9svw;
+    color: #9dc2ec;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255,255,255,0.5);
+    transform: scale(1,1.1) translate(-50%, 10%);
+}
+/* nav */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.logo {
+    width: 200px;
+    height: -900px;
+
+}
+a {
+    text-decoration: none;
+    color: #9dc2ec;
+}
+ul {
+    list-style: none;
+}
+.nav_link {
+    font-size: 18px;
+    color: #9dc2ec;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: all .3s;
+}
+.nav_link:hover {
+    color: #273456;
+}
+.header {
+    background: #3D5A9B;
+}
+.header_content {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 2000px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #3D5A9B;
+    z-index: 100;
+}
+.nav_list {
+    display: flex;
+    column-gap: 10px;
+}
+.logo_img {
+    height: -700px;
+    display: block;
+    width: 200px;
+    padding: 1 30px;
+
+}
+/* pages*/
+
+.par1 {
+    top: 40%;
+    left: 10%;
+    right: -1%;
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: #9dc2ec;
+    width: 53%;
+}
+.but {
+    position: absolute;
+    left: 10%;
+    right: 60%;
+    bottom: 10%;
+    background-color: #3D5A9B;
+    border: none;
+    color: #9dc2ec;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 10%;
+    font-family: 'Londrina Solid';
+    letter-spacing: 1px;
+}
+.but:hover {
+    background-color: #9dc2ec;
+    color: #3D5A9B;
+}
+
+/* footer/source */
+.section5 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  url("bgvid.gif");
+    font-family: 'Londrina Solid';
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.foot {
+    background:  #3D5A9B;
+    font-family: 'Londrina Solid';
+    font-size: 30px;
+    color: #9dc2ec;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255,255,255,0.5);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    justify-content: center;
+    display: flex;
+    position: sticky;
+}
+.foott {
+    font-family: 'Londrina Solid';
+}
+

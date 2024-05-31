@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>H gwapa</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="H">
+    <meta name="section" content="Calcium">
+    <meta name="keyword" content="Q4Fa1">
+
+    <link href='https://fonts.googleapis.com/css?family=Corinthia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kranky' rel='stylesheet'>
+</head>
+<body>
+    <center>
+    <h1 style="font-family: 'Kranky'; color:aliceblue; font-size: 50px; justify-content: center;"> Sign-Up </h1>
+    <div class="signUpcont">
+         
+        <form id="login">
+            <fieldset form="login" style="border-radius: 10%; border-color:rgb(214, 97, 163); box-shadow:0 0 20px #5f5e5e;">
+                <legend style="font-family: 'Corinthia'; color:aliceblue; font-size: 30px;">You dont know your self? </legend><br>
+                    
+                <label for="name" style="font-family: 'Kranky'; color:aliceblue; margin-left: -210px;">Name:</label>
+                <label for="userName" style="font-family: 'Kranky'; color:aliceblue; margin-left: 90px; margin-right: -180px;">Username:</label><br>
+                <input type="text" id="name" name="name" placeholder="Name" onblur="validateInput(this)" onfocus="clearBorder(this)">
+                <input type="text" id="userName" name="userName" placeholder="Username" onblur="validateInput(this)" onfocus="clearBorder(this)"><br><br>
+                
+                <label for="pword" style="font-family: 'Kranky'; color:aliceblue;">Password:</label><br>
+                <div class="password-toggle">
+                <input type="password" id="pword" name="pword" placeholder="Password" onblur="validateInput(this)" onfocus="clearBorder(this)">
+                <i class="password-toggle-icon" onclick="togglePasswordVisibility('pword')"></i>
+                
+                </div>
+                <br>
+                <label for="cword" style="font-family: 'Kranky'; color:aliceblue;">Confirm Password:</label><br>
+                <input type="password" id="cword" name="cword" placeholder="Confirm" onblur="validateInput(this)" onfocus="clearBorder(this)">
+                <br>
+                <button class="mayibanasiya" onclick="printUserInfo()">Confirm</button>
+                <br><br>
+
+                <label for="email" style="font-family: 'Kranky'; color:aliceblue;">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email" onblur="validateInput(this)" onfocus="clearBorder(this)"><br><br>
+                
+                <label for="adress" style="font-family: 'Kranky'; color:aliceblue;">Address:</label><br>
+                <input type="text" id="adress" name="adress" placeholder="Address" onblur="validateInput(this)" onfocus="clearBorder(this)"><br><br>
+                
+                <label for="gender" style="font-family: 'Kranky'; color:aliceblue;">Gender:</label><br>
+                <select id="gender" name="gender" style="font-family: 'Corinthia'; height: 30px; width: 80%; border-radius: 5px; border: 2px solid rgb(214, 97, 163);">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="prefer_not_to_mention">Prefer not to mention</option>
+                </select><br><br>
+
+                <label for="shortRes" style="font-family: 'Kranky'; color:aliceblue;">Interests:</label><br>
+                <input type="text" id="shortRes" name="shortRes" placeholder="Enter your interest..." onblur="validateInput(this)" onfocus="clearBorder(this)"><br><br>
+
+                <input type="submit" value="Submit" >
+                <input type="reset" value="Clear">
+            </fieldset>
+        </form>
+        <div id="userInfo"></div>
+    </div>
+    </center>
+</body>
+<style>
+    body {
+        background-image: url("BIOCHEMISTRY.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 1;
+        margin-top: -1%;
+        justify-content: center;
+        
+    }
+    .signUpcont {
+        height: 30%;
+        width: 27%;
+        margin: auto;
+        backdrop-filter: blur(30px);
+        justify-content: center;
+        border-radius: 13%;
+        box-shadow: 50px;
+    } 
+    label {
+        font-size: 20px;
+    }
+    ::placeholder{
+        color: rgb(214, 97, 163);
+    }
+    input[type="text"], input[type="password"], input[type="email"] {
+        font-family: 'Corinthia'; 
+        height: 20px; 
+        width: 80%; 
+        border-radius: 5px; 
+        border: 2px solid rgb(214, 97, 163); 
+        font-size: 20px;
+    }
+    #name, #userName {
+        font-family: 'Corinthia'; 
+        height: 20px; 
+        width: 40%; 
+        border-radius: 5px; 
+        border: 2px solid rgb(214, 97, 163); 
+        font-size: 20px;
+    }
+    .mayibanasiya {
+        color:  rgb(214, 97, 163);
+        border: 0.5px solid  rgb(214, 97, 163);
+        border-radius: 10px;
+        cursor: pointer;
+	    width:10%;
+        height: 20px;
+		text-align:center;
+		font-family: 'Arial';
+        font-size: 7px;
+        background-color: #f4c7d8;
+        margin-top: 5px;
+    }
+    .mayibanasiya:hover {
+        background-color: rgb(214, 97, 163);
+        color: white;
+    }
+    input[type="submit"], input[type="reset"] {
+        color:  rgb(214, 97, 163);
+        border: 0.5px solid  rgb(214, 97, 163);
+        border-radius: 10px;
+        cursor: pointer;
+	    width:20%;
+        height: 30px;
+		text-align: center;
+		font-family: 'Arial';
+        font-size: 10px;
+        background-color: #f4c7d8;
+        margin-top: 5px;
+    }
+    input[type="submit"]:hover, input[type="reset"]:hover {
+        background-color: rgb(214, 97, 163);
+        color: white;
+    }
+    input[type="sentence"] {
+        font-family: 'Corinthia'; 
+        height: 50px; 
+        width: 80%; 
+        border-radius: 5px; 
+        border: 2px solid rgb(214, 97, 163); 
+        font-size: 20px;
+    }
+</style>
+<script>
+    const form = document.querySelector('form');
+    const pwordInput = document.querySelector('#pword');
+    const cwordInput = document.querySelector('#cword');
+
+    function togglePasswordVisibility(inputId) {
+      const input = document.querySelector('#' + inputId);
+      if (input.type === 'password') {
+        input.type = 'text';
+        document.querySelector('.password-toggle-icon').classList.add('show');
+      } else {
+        input.type = 'password';
+        document.querySelector('.password-toggle-icon').classList.remove('show');
+      }
+    }
+  
+    form.addEventListener('submit', function(event) {
+      if (pwordInput.value !== cwordInput.value) {
+        alert('The passwords do not match. Please try again.');
+        event.preventDefault();
+      }
+    });
+
+    function validateInput(input) {
+        if (input.value.trim() === "") {
+            input.style.border = "2px solid red";
+        }
+    }
+
+    function clearBorder(input) {
+        input.style.border = "2px solid rgb(214, 97, 163)";
+    }
+
+    function printUserInfo() {
+        const name = document.getElementById("name").value;
+        const userName = document.getElementById("userName").value;
+        const email = document.getElementById("email").value;
+        const address = document.getElementById("adress").value;
+        const gender = document.getElementById("gender").value;
+        const interest = document.getElementById("shortRes").value;
+
+        const userInfoDiv = document.getElementById("userInfo");
+        userInfoDiv.innerHTML = `
+            <p>Name: ${name}</p>
+            <p>Username: ${userName}</p>
+            <p>Email: ${email}</p>
+            <p>Address: ${address}</p>
+            <p>Gender: ${gender}</p>
+            <p>Interests: ${interest}</p>
+        `;
+    }
+</script>
+</html>
